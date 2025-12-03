@@ -1659,3 +1659,70 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Custom overrides for 产品展示 */
+.logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.contact-list li + li {
+  margin-top: 0.5rem;
+}
+
+.product-section {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.product-card .image {
+  margin: 0;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-copy {
+  padding: 1.25rem 1.5rem;
+}
+
+.product-copy h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.actions.centered {
+  justify-content: center;
+}
